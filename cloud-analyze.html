@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>舆情分析</title>
+</head>
+
+<body>
+<div class="cloud-office-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-blue">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">云办公平台</div>
+    <div class="fr">
+      <div class="headportrait pr fl">
+        <div class="png-headportrait"> </div>
+        <i class="icon">3</i></div>
+      <div class="fl personname pr">王思科<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/headportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>王思科</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+        <li ><a   href="cloud-office.html"><i class="icon icon-yun"></i><span>我的云盘</span></a></li>
+        <li><a  href="cloud-affairs-treatment.html"><i class="icon icon-dealthing"></i><span>事务处理</span></a></li>
+        <li><a  href="cloud-check.html"><i class="icon icon-examine"></i><span>量化考核</span></a></li>
+        <li><a href="cloud-add-leave.html"><i class="icon icon-counterfeit"></i><span>在线请批假</span></a></li>
+        <li class="active"><a href="javascript:void(0)"><i class="icon icon-analyze"></i><span>舆情分析</span></a></li>
+      <li ><a  href="cloud-meeting.html"><i class="icon icon-meeting"></i><span>会议管理</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr opinion-analyze tb-yun-wrap">
+    <h2 class="conmmon-title">舆情分析</h2>
+   <div class="plr10"> <dl><dt>关键字抓取频率：</dt><dd>
+    <div class="simulate-cbox-wrap icon radio-wrap checked">
+                    <input type="radio">
+                  </div><span>每周</span>
+                    <div class="simulate-cbox-wrap icon radio-wrap">
+                    <input type="radio">
+                  </div><span>每两周</span>
+                    <div class="simulate-cbox-wrap icon radio-wrap">
+                    <input type="radio">
+                  </div><span>每月</span></dd>
+    <dt>关键字预警值：</dt>
+    <dd>当抓取的关键字超过        <input type="text" class="number-limit" />              条后发送预警信息</dd>
+    <dt>接收预警信息人员：</dt>
+    <dd><input  type="text" class="receive-people"/>
+    <br />
+    <a href="javascript:void(0)" class="color-orange">添加人员</a></dd></dl>
+    <h3>预警信息设置</h3>
+    <p class="t-g"><spn>1、投诉建议（职工服务平台）</span><span>       2、关注网站</span></p>
+    <div class="keyword-website"><input  type="button" value="添加" class="btn-f btn-blue fr"/><span>网站地址</span><input  class="receive-people " type="text"/>
+    <span>关键字</span><input class="receive-people w270"  type="text" /></div>
+    <table class="table table-hover table-striped"><tr><th width="424">网站网址</th><th width="400">关键字</th></tr>
+    
+    <tr><td><a href="javascript:void(0)" >http://www.jjzgh.org</a></td><td>晋江，工会，</td></tr>
+    <tr><td><a href="javascript:void(0)" >http://www.acftu.org/</a></td><td>中华总工会</td></tr>
+    <tr><td><a href="javascript:void(0)" >http://www.fjgh.org.cn/</a></td><td>工会，投诉、</td></tr>
+      <tr><td><a href="javascript:void(0)" >http://www.jjzgh.org</a></td><td>晋江，工会，</td></tr>
+    <tr><td><a href="javascript:void(0)" >http://www.acftu.org/</a></td><td>中华总工会</td></tr>
+    <tr><td><a href="javascript:void(0)" >http://www.fjgh.org.cn/</a></td><td>工会，投诉、</td></tr></table>
+
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/puclic.js"></script>
+</body>
+</html>

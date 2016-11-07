@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"    href="css/vender/font-awesome.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>举报投诉-服务平台</title>
+</head>
+<body>
+<div class="cloud-office-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-orange">
+    <div class="png-logo fl logo-orange"> </div>
+    <div class="fl yun-title">职工服务平台</div>
+    <div class="fr">
+      <div class="headportrait pr fl">
+        <div class="png-headportrait"> </div>
+        <i class="icon">3</i></div>
+      <div class="fl personname pr">王思科<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/headportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>王思科</p>
+        </div>
+      </div>
+      <ul class="service item-channels MENU yun-menu" >
+        <li ><a href="javascript:void(0)"><i class="icon icon-service-mutualmedical "></i>医疗互助</a></li>
+        <li><a href="javascript:void(0)"><i class="icon icon-service-kun"></i>困难帮扶</a></li>
+        <li><a href="service-mental-health.html"><i class="icon icon-service-xin"></i>心理健康</a></li>
+        <li><a href="service-female-love.html"><i class="icon icon-service-nv"></i>女工关爱</a></li>
+        <li><a href="service-comparison-recognition.html"><i class="icon icon-service-ping"></i>评比表彰</a></li>
+        <li><a href="service-staff-train.html"><i class="icon icon-service-zhi"></i>职工培训</a></li>
+        <li><a href="service-job-hunting.html"><i class="icon icon-service-zhao"></i>招聘求职</a></li>
+        <li><a href="service-publicity.html"><i class="icon icon-service-xuan"></i>宣传报道</a></li>
+        <li><a href="service-worker-activities.html"><i class="icon icon-service-zhidong"></i>职工活动</a></li>
+       <li class="active"><a href="javascript:void(0)"><i class="icon icon-service-ju"></i>举报投诉</a></li>
+        <li ><a href="service-legal-aid.html"><i class="icon icon-service-fa"></i>法律援助</a></li>
+        <li><a href="service-points-for.html"><i class="icon icon-service-ji"></i>积分兑换</a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+      <h2 class="conmmon-title">举报投诉</h2>
+      <div class="TAB-content">
+        <div class="mycloud">
+          <div class="btn-operation-wrap clearfix">
+        
+            <form class="form-inline">
+               <div class="form-group">  <input type="button" data-target=".Modal-new-report-complains" data-toggle="modal" value="新建" class="btn-f btn-orange-f fl ">
+            <input type="button" value="修改" class="btn-f btn-default-f fl">
+            <input type="button" value="删除" class="btn-f btn-default-f fl">
+            </div>
+              <div class="form-group">
+                <label>收支</label>
+           <select class="selectpicker " data-style="btn-default" tabindex="-98">
+                  <option>已处理</option>
+                  <option>未处理</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label>满意度</label>
+           <select class="selectpicker " data-style="btn-default" tabindex="-98">
+                  <option>满意</option>
+                  <option>不满意</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label>类型</label>
+           <select class="selectpicker " data-style="btn-default" tabindex="-98">
+                  <option>投诉</option>
+                  <option>建议</option>
+                </select>
+                </div>
+              <div class="form-group points-search-wrap"><i class="fa fa-search "></i></div>
+            
+</form>
+          </div>
+          <table class="tb">
+            <thead>
+              <tr>
+                <th width="34" > <div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div>
+                </th>
+                <th width="320" >标题</th>
+                <th width="80">类型</th>
+                 <th width="70">状态</th>
+                  <th width="80">发起人</th>
+                <th width="100">发布时间</th>
+                <th width="80" >满意度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td><a href="javascript:void(0)" >态度恶劣的自来水工人</a></td>
+                 <td>投诉 </td>
+                 <td>未处理 </td>
+                 <td>***** </td>
+                <td>2016-03-03 </td>
+                <td class="color-orange">不满意 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td><a href="javascript:void(0)" >态度恶劣的自来水工人</a></td>
+                 <td>投诉 </td>
+                 <td>未处理 </td>
+                 <td>***** </td>
+                <td>2016-03-03 </td>
+                <td >满意 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td><a href="javascript:void(0)" >态度恶劣的自来水工人</a></td>
+                 <td>投诉 </td>
+                 <td>未处理 </td>
+                 <td>***** </td>
+                <td>2016-03-03 </td>
+                <td class="color-orange">—— </td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <div class="paging pr">
+            <div class="fr  p-wrap"> <span class="p-num"><span>1/1页</span><a href="javascript:void(0)">下一页</a> <a href="javascript:void(0)">跳转</a></span>
+              <div class="p-skip">跳转到第
+                <input  type="text" class="skip-input-txt"/>
+                页
+                <input type="button"  value="确定" class="paging-sure"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div><div><a href="javascript:void(0)"></a></div><div></div></div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div  role="dialog" class="Modal-new-report-complains modal fade">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="button" data-dismiss="modal" aria-label="Close" class="icon icon-close mod-close">
+        <h4 class="modal-title" id="myModalLabel">新建投诉</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>姓名</span>
+            <div>
+              <input type="text" >
+              <div class="error-message">请输入姓名</div>
+            </div>
+          </li>
+          <li><span>电话</span>
+            <div>
+              <input type="text" >
+            </div>
+          </li>
+          <li><span>类型</span>
+        <div class=" notice mt10">
+          <div class="simulate-cbox-wrap icon radio-wrap fl">
+                    <input type="radio">
+                  </div>
+          <span class="fl">短信通知</span><div class="simulate-cbox-wrap icon radio-wrap fl">
+                    <input type="radio">
+                  </div>
+          <span class="fl">邮件通知</span>
+                    <div class="simulate-cbox-wrap icon fl">
+            <input type="checkbox">
+          </div>
+          <span class="fl">邮件通知</span>
+   </div>
+          </li>
+          <li><span>标题</span>
+            <div>
+              <input type="text" >
+            </div>
+          </li>
+          <li><span>内容</span>
+            <div>
+                 <textarea  ></textarea>
+            </div>
+          </li>
+          
+<li><span>附件</span>
+            <div>
+         <input type="text" >
+             <br />
+            <a class="color-orange">上传附件</a>
+            </div>
+        
+          </li>
+        </ul>
+     
+      <div class="modal-footer">
+    <div class="clearfix  ml230">
+          <button class="btn-fang-lager btn-orange-fang fl mr10" type="button">提交</button>
+          <button data-dismiss="modal" class="btn-fang-lager btn-gray-fang fl  mod-close" type="button">取消</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+<script src="js/vender/bootstrap-select.min.js"></script> 
+<script src="js/puclic.js"></script>
+</body>
+</html>

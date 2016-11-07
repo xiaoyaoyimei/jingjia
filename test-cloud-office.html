@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>云办公</title>
+</head>
+
+<body>
+<div class="cloud-office-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-blue">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">云办公平台</div>
+    <div class="fr">
+      <div class="headportrait pr fl">
+        <div class="png-headportrait"> </div>
+        <i class="icon">3</i></div>
+      <div class="fl personname pr">王思科<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/headportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>王思科</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+        <li class="active"><a href="javascript:void(0)"><i class="icon icon-yun"></i><span>我的云盘</span></a></li>
+        <li><a  href="cloud-affairs-treatment.html"><i class="icon icon-dealthing"></i><span>事务处理</span></a></li>
+        <li><a  href="cloud-check.html"><i class="icon icon-examine"></i><span>量化考核</span></a></li>
+        <li><a href="cloud-add-leave.html"><i class="icon icon-counterfeit"></i><span>在线请批假</span></a></li>
+        <li ><a href="cloud-analyze.html"><i class="icon icon-analyze"></i><span>舆情分析</span></a></li>
+        <li ><a  href="cloud-meeting.html"><i class="icon icon-meeting"></i><span>会议管理</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+      <ul class="nav TAB">
+        <li class="active"><a href="javascript:void(0)">我的云盘</a></li>
+        <li><a href="javascript:void(0)">分享管理</a></li>
+        <li><a href="javascript:void(0)">回收站</a></li>
+      </ul>
+      <div class="TAB-content">
+        <div class="mycloud">
+        <div class="crumbs"><a class="color-blue" href="javascript:void(0)">我的云盘</a>><a class="color-blue" href="javascript:void(0)">测试文件夹</a>><span>新建文件夹</span></div>
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f btn-blue fl Modal-new-transaction" value="事务处理"  />
+            <input type="button"  class="btn-f btn-default-f fl"  value="上传"/>
+            <div class=" add-cloud pr"><input type="button"  class="btn-f btn-default-f fl"  value="新建"/>
+         <div class="cloud-item">   <span>文件夹</span>
+            <span>word文档</span>
+            <span>Excel工作表</span>
+            <span>PPT演示文稿</span>
+            <span>文件文档</span>
+            </div>
+            </div>
+            <input type="button"  class="btn-f btn-default-f fl"  value="下载"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="删除"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="分享文件" data-target=".Modal-share-files" data-toggle="modal"/>
+         <div class=" add-cloud pr">   <input type="button"  class="btn-f btn-default-f fl"  value="更多"/>
+                <div class="cloud-item">   <span>移动</span>
+            <span>复制</span>
+            <span>重命名</span>
+            <span  data-target=".Modal-version-history" data-toggle="modal">历史版本</span>
+            <span  data-target=".Modal-operation-log" data-toggle="modal">操作日志</span>
+            </div>
+            </div>
+           
+            <div class="fr query icon">
+              <input  value="查询"/>
+              <i class="icon icon-search"></i></div>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="400"  class="tl">文件名</th>
+                <th width="190" class="tl">大小</th>
+                <th width="200" class="tl">修改日期</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><div class="pr folder-wrap"><i class="icon icon-folder"></i><span>测试文件夹</span></div></td>
+                <td>23KB</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><div class="pr folder-wrap"><i class="icon icon-word"></i><span>测试文件夹</span></div></td>
+                <td>23KB</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="myshare">
+          <ul class="tab-sub mtb-10-10 TAB">
+            <li class="active"><a href="javascript:void(0)">我的分享</a></li>
+            <li><a href="javascript:void(0)">他人分享</a></li>
+          </ul>
+          <div class="TAB-content">
+            <div>
+              <div class="btn-operation-wrap clearfix">
+                <input type="button"  class="btn-f btn-blue fl" value="分享文件"/>
+                <input type="button"  class="btn-f btn-default-f fl"  value="下载"/>
+                <input type="button"  class="btn-f btn-default-f fl"  value="删除"/>
+                <div class="fr query icon">
+                  <input  value="查询"/>
+                  <i class="icon icon-search"></i></div>
+              </div>
+              <table class="tb" >
+                <thead>
+                  <tr>
+                    <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                        <input type="checkbox"/>
+                      </div>
+                    </th>
+                    <th width="400"  class="tl">文件名</th>
+                    <th width="190" class="tl">大小</th>
+                    <th width="200" class="tl">修改日期</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="simulate-cbox-wrap icon" >
+                        <input type="checkbox"/>
+                      </div></td>
+                    <td><div class="pr folder-wrap"><i class="icon icon-folder"></i><span>测试文件夹</span></div></td>
+                    <td>23KB</td>
+                    <td>2016-03-03   12:45:26 </td>
+                  </tr>
+                  <tr>
+                    <td><div class="simulate-cbox-wrap icon">
+                        <input type="checkbox"/>
+                      </div></td>
+                    <td><div class="pr folder-wrap"><i class="icon icon-word"></i><span>测试文件夹</span></div></td>
+                    <td>23KB</td>
+                    <td>2016-03-03   12:45:26 </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <div class="btn-operation-wrap clearfix">
+                
+                <input type="button"  class="btn-f btn-blue fl " data-toggle="modal" data-target=".Modal-archived-clouddisk" value="转存至云盘"/>
+                <input type="button"  class="btn-f btn-default-f fl"  value="下载"/>
+                <input type="button"  class="btn-f btn-default-f fl"  value="删除"/>
+                <div class="fr query icon">
+                  <input  value="查询"/>
+                  <i class="icon icon-search"></i></div>
+              </div>
+              <table class="tb" >
+                <thead>
+                  <tr>
+                    <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                        <input type="checkbox"/>
+                      </div>
+                    </th>
+                    <th width="400"  class="tl">文件名</th>
+                    <th width="190" class="tl">大小</th>
+                    <th width="200" class="tl">修改日期</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="simulate-cbox-wrap icon" >
+                        <input type="checkbox"/>
+                      </div></td>
+                    <td><div class="pr folder-wrap"><i class="icon icon-folder"></i><span>测试文件夹</span></div></td>
+                    <td>23KB</td>
+                    <td>2016-03-03   12:45:26 </td>
+                  </tr>
+                  <tr>
+                    <td><div class="simulate-cbox-wrap icon">
+                        <input type="checkbox"/>
+                      </div></td>
+                    <td><div class="pr folder-wrap"><i class="icon icon-word"></i><span>测试文件夹</span></div></td>
+                    <td>23KB</td>
+                    <td>2016-03-03   12:45:26 </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f btn-blue fl" value="恢复"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="彻底删除"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="清空回收站"/>
+            <div class="fr query icon">
+              <input  value="查询"/>
+              <i class="icon icon-search"></i></div>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="400"  class="tl">文件名</th>
+                <th width="190" class="tl">大小</th>
+                <th width="200" class="tl">修改日期</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><div class="pr folder-wrap"><i class="icon icon-folder"></i><span>测试文件夹</span></div></td>
+                <td>23KB</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><div class="pr folder-wrap"><i class="icon icon-word"></i><span>测试文件夹</span></div></td>
+                <td>23KB</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--新建事务-s-->
+<!--<div class="Modal-new-transaction  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">新建事务</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>
+            <label class="color-red">*</label>
+            事务名称</span>
+            <div>
+              <input  type="text" />
+            </div>
+          </li>
+          <li><span>截止日期</span>
+            <div>
+              <input  type="text" />
+              可不填 </div>
+          </li>
+          <li><span>相关文件</span>
+            <div> <a class="color-blue mr30">本地上传</a><a class="color-blue">从我的云盘上传</a> </br>
+              <input  type="text" />
+              </br>
+              <a class="color-blue ">添加</a> </div>
+          </li>
+          <li><span>
+            <label class="color-red">*</label>
+            处理人员</span>
+            <div>
+              <input  type="text"/>
+            </div>
+          </li>
+          <li><span>
+            <label class="color-red">*</label>
+            事务说明</span>
+            <div>
+              <textarea ></textarea>
+              <br />
+              <input type="checkbox"  class="mr10"/>
+              同时发送短信通知</div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f btn-blue fl mr10" > 确定</button>
+          <button type="button" class="btn-f btn-default-f fl  mod-close" data-dismiss="modal" >取消</button>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>-->
+<!--新建事务-e--> 
+<!--分享文件-s-->
+<div class="Modal-share-files  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content   ">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">分享文件</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>分享名称</span>
+            <div> <input  type="text"/> </div>
+          </li>
+          <li><span>分享人员</span>
+            <div> <a class="color-blue fr mr30 " href="javascript:void(0)">清空</a><a class="color-blue fr mr30"  href="javascript:void(0)">添加</a> </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer text-center">
+          <button type="button" class="btn-f btn-blue  mr10" > 确定</button>
+          <button type="button" class="btn-f btn-default-f   mod-close" data-dismiss="modal" >取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<!--分享文件-e--> 
+<!--历史版本-s--> 
+<div class="Modal-version-history  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content w500  ">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">历史版本</h4>
+      </div>
+      <div class="modal-body">
+        <table class="tb text-center">
+            <thead>
+              <tr>
+                <th width="34" >
+                </th>
+                <th width="80" >版本号</th>
+                <th width="190" >修改日期</th>
+                <th width="190" >文件</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>当前</td>
+                 <td>2016-03-03   12:45:26 </td>
+        
+                <td><a class="color-blue mr20">查看</a><a class="color-blue">下载</a></td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>当前</td>
+                 <td>2016-03-03   12:45:26 </td>
+    
+                <td><a class="color-blue mr20">查看</a><a class="color-blue mr20">还原</a><a class="color-blue">下载</a></td>
+              </tr>
+                  <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>当前</td>
+                 <td>2016-03-03   12:45:26 </td>
+               
+                <td><a class="color-blue mr20">查看</a><a class="color-blue mr20">还原</a><a class="color-blue">下载</a></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="modal-footer text-center">
+          <button type="button" class="btn-f btn-blue  mr10" > 确定</button>
+          <button type="button" class="btn-f btn-default-f   mod-close" data-dismiss="modal" >取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<!--历史版本-e-->
+<!--操作日志-s -->
+
+<div class="Modal-operation-log  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content  w900 ">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">操作日志</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline">
+           
+              <div class="form-group">
+                <label>操作类型:</label>
+                <select class="selectpicker " data-style="btn-default" data-live-search="true">
+                  <option>全部</option>
+                  <option>下载</option>
+                  <option>新建</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>起止时间:</label>
+               <input type="text" class="form-control w140">~<input type="text" class="form-control w140">
+              </div>
+                 <div class="form-group">
+                <label>指定成员:</label>
+               <input type="text" class="form-control " />
+              </div>
+              <div class="form-group "><input type="button"  value="重置" class="btn-f btn-blue fl"></div>
+            </form>
+            <table class="tb text-center">
+            <thead>
+              <tr>
+              
+                <th width="80" >成员</th>
+                <th width="190" >操作时间</th>
+                <th width="190" >操作设备</th>
+                 <th width="190" >操作ID</th>
+                  <th width="190" >操作类型</th>
+                        <th width="190" >操作详情</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>shawn</td>
+                 <td>2016-05-03   12:45:26 </td>
+        <td>web</td>
+        <td>192.168.1.70</td>
+        <td>下载</td>
+        <td>/我的云盘</td>
+              </tr>
+              <tr>
+                <td>shawn</td>
+                 <td>2016-05-03   12:45:26 </td>
+        <td>web</td>
+        <td>192.168.1.70</td>
+        <td>下载</td>
+        <td>/我的云盘</td>
+              </tr>
+                  <tr>
+                <td>shawn</td>
+                 <td>2016-05-03   12:45:26 </td>
+        <td>web</td>
+        <td>192.168.1.70</td>
+        <td>下载</td>
+        <td>/我的云盘</td>
+              </tr>    
+                  
+            </tbody>
+          </table>
+      </div>
+  
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<!--操作日志-e -->
+<!--转存至我的云盘-s -->
+<div class="Modal-archived-clouddisk  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content   ">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">转存至云盘</h4>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer text-center">
+       <button type="button" class="btn-f btn-blue fl mr10" > 新建文件夹</button>
+            <button type="button" class="btn-f btn-default-f  fr mod-close" data-dismiss="modal" >取消</button>
+          <button type="button" class="btn-f btn-default-f  mr10 fr" > 确定</button>
+     
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+
+<!--转存至我的云盘-e -->
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+<script   src="js/vender/bootstrap-select.min.js"></script> 
+<script src="js/puclic.js"></script>
+        <script type="text/javascript">
+		$(function(){
+			//modalwidth,title,hcontent,param,dataType,pathContent,showCancel,btn
+   $('.Modal-new-transaction').click(function(){
+	   	   
+ JINJIANG.Global.opencustomwindow({
+		 title:'新建事务',
+		 dataType:'text',
+		 hcontent:' <div class="modal-body"> <ul class="clearfix"><li><span><label class="color-red">*</label>事务名称</span> <div><input  type="text" /></div></li></ul></div>',
+	     showCancel:true,
+	     btn:[{"classes":"btn-f btn-orange  mr10", "text":"确定", "callback":function() {alert("www");}}]
+             });
+   });
+});
+</script>
+</body>
+</html>

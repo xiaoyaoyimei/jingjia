@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/font-awesome.min.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>晋江公会</title>
+</head>
+
+<body>
+<div class="page-homepage w"> 
+  <!--头部-->
+  
+<!--  <div class="header clearfix bg-white">
+
+    
+  </div>-->
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl">
+    <div class="logo-wrap">
+    <img  src="img/logo.jpg" class="fl logo " />
+    </div>
+    <div class=" sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/headportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>王思科</p>
+        </div>
+      </div>
+      <ul class="sidebar-bg MENU">
+        <li ><a href="javascript:void(0)">职工服务平台</a>
+          <ul class="item-channels">
+            <li><a href="javascript:void(0)"><i class="icon icon-mutualmedical "></i>医疗互助</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-kun"></i>困难帮扶</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-xin"></i>心理健康</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-nv"></i>女工关爱</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-ping" ></i>评比表彰</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-zhi"></i>职工培训</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-zhao"></i>招聘求职</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-xuan"></i>宣传报道</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-zhidong"></i>职工活动</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-ju"></i>举报投诉</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-fa"></i>法律援助</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-ji"></i>积分兑换</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">系统管理平台</a></li>
+        <li><a href="javascript:void(0)">工会管理平台</a></li>
+        <li><a href="javascript:void(0)">云办公平台</a></li>
+        <li><a href="javascript:void(0)">消息服务平台</a></li>
+      </ul>
+    </div>
+    </div>
+    <!--右侧-->
+    <div class="fr ">
+     <div class="gb-tab pr clearfix">   <ul class="fl nav TAB">
+      <li class="active"><a href="javascript:void(0)">微博</a></li>
+      <li><a  href="index-notice.html">公告</a></li>
+      <li ><a   href="index-online-news.html">在线消息</a></li>
+      <li><a  href="index-mail.html">邮件</a></li>
+    </ul>
+      <div class="fr shizhi">
+      <div class="headportrait pr fl"><img  src="img/headportrait.jpg" /><i class="icon">3</i></div>
+      <div class="fl personname pr">王思科<i class="icon icon-drop-down"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup icon"></i></div>
+    </div>
+  </div>
+ 
+    <div class="TAB-content content-right">
+    <div>  <div class="publish ">
+        <textarea></textarea>
+        <div class="operation clearfix">
+          <div class="operation-left"><a href="javascript:void(0)"><i class="icon icon-smile"></i>表情</a><a href="javascript:void(0)"><i class="icon icon-pic"></i>图片</a><a href="javascript:void(0)"><i class="icon icon-DV"></i>视频</a><a href="javascript:void(0)"><i class="icon icon-topic"></i>话题</a><a href="javascript:void(0)"><i class="icon icon-hot"> </i>头条文章</a><span>...</span></div>
+          <input class="btn-f btn-orange " type="button" value="发布"/>
+        </div>
+      </div>
+      <div class="bg-white">
+        <ul class="dynamic-title clearfix TAB">
+          <li class="active">所有动态</li>
+          <li>我关注的</li>
+          <li>我发布的</li>
+          <li>我的评论</li>
+          <li>我收藏的</li>
+          <li>提到我的</li>
+        </ul>
+        <div class="TAB-content">
+          <div>
+          <ul class="dynamic-content">
+            <li class="clearfix">
+            <div class="fl headpic"><img width="66" src="img/avatar.png"> </div>
+            <div class="comments fl">
+            <h6><span class="fr">今天10:00</span>青青草原</h6>
+            <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+              不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+            <img  src="img/figurecaptions.png" />
+            <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i  class="icon icon-praise"></i>赞(5)</span></div>
+            <div class="WB_wrap"><i class="fa fa-caret-up"></i><div class="clearfix WB_feed_publish"> <img width="36" src="img/headportrait.png" class="fl mr10">
+              <div class="fl my-comment">
+                <textarea></textarea>
+           <div class="opt ">  
+           <a class="pr fl " href="javascript:void(0)"><i class="icon icon-smile"></i></a> <a class="pr fl" href="javascript:void(0)"><i class="icon icon-pic"></i></a>
+           <div class="fl"><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div>同时转发到我的微博</div>   <input type="button" class="btn btn-send fr" value="评论">
+            </div>  </div>
+            </div>
+            <ul  class="repeat_list">
+            <li><img width="36" src="img/headportrait-36-36.png" class="fl mr10">
+                <div class="WB_text"> <a  href="javascript:void(0)" target="_blank" class="color-orange">姚xmei2016</a>：留着，过几天弄 </div>
+                <div class="WB_func clearfix">
+                  <div class="fr"><span>回复</span><a href="javascript:void(0)" class="S_line1"><i class="icon icon-praise"></i>0</a></div>
+                  <div class="WB_from S_txt2">今天 13:22 </div>
+                </div>
+              
+              </li>
+              <li><img width="36" src="img/headportrait-36-36.png" class="fl mr10">
+                <div class="WB_text"> <a  href="javascript:void(0)" target="_blank" class="color-orange">姚xmei2016</a>：留着，过几天弄 </div>
+                <div class="WB_func clearfix">
+                  <div class="fr"><span>回复</span><a href="javascript:void(0)" class="S_line1"><i class="icon icon-praise"></i>0</a></div>
+                  <div class="WB_from S_txt2">今天 13:22 </div>
+                </div>
+              
+              </li>
+              <li><img width="36" src="img/headportrait-36-36.png" class="fl mr10">
+                <div class="WB_text"> <a  href="javascript:void(0)" target="_blank" class="color-orange">姚xmei2016</a>：留着，过几天弄 </div>
+                <div class="WB_func clearfix">
+                  <div class="fr"><span>回复</span><a href="javascript:void(0)" class="S_line1"><i class="icon icon-praise"></i>0</a></div>
+                  <div class="WB_from S_txt2">今天 13:22 </div>
+                </div>
+              
+              </li>
+              <li><img width="36" src="img/headportrait-36-36.png" class="fl mr10">
+                <div class="WB_text"> <a  href="javascript:void(0)" target="_blank" class="color-orange">衣衫不沾尘2016</a>：说了多少遍了也不给解决 </div>
+                <div class="WB_func clearfix">
+                  <div class="fr"><span>回复</span><a href="javascript:void(0)" class="S_line1"><i class="icon icon-praise"></i>0</a></div>
+                  <div class="WB_from S_txt2">今天 13:22 </div>
+                </div>
+              <div class="clearfix my-comment my-answer">
+    <i class="fa fa-caret-up"></i>
+                <textarea></textarea>
+           <div class="opt ">  
+           <a href="javascript:void(0)" class="pr fl "><i class="icon icon-smile"></i></a> <a href="javascript:void(0)" class="pr fl"><i class="icon icon-pic"></i></a>
+           <div class="fl"><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div>同时转发到我的微博</div>   <input type="button" value="评论" class="btn btn-send fr">
+            </div>  </div>
+              </li>
+                <li><img width="36" src="img/headportrait-36-36.png" class="fl mr10">
+                <div class="WB_text"> <a  href="javascript:void(0)" target="_blank" class="color-orange">姚xmei2016</a>：留着，过几天弄 </div>
+                <div class="WB_func clearfix">
+                  <div class="fr"><span>回复</span><a href="javascript:void(0)" class="S_line1"><i class="icon icon-praise"></i>0</a></div>
+                  <div class="WB_from S_txt2">今天 13:22 </div>
+                </div>
+              
+              </li>
+            </ul>
+            </div>
+            </div>
+            </li>
+            <li class="clearfix">
+              <div class="fl headpic"><img width="66" src="img/avatar1.png"> </div>
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>青青草原</h6>
+                <p>生活本来就是鲜花和荆棘并存，用温柔的方式与未知相遇。豆瓣红人海猫小樽2016年重磅新作《你值得世间一切美好》，写给追逐梦想的道路上奋力前行的你。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i  class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="fl headpic"><img width="66" src="img/avatar2.png"> </div>
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>青青草原</h6>
+                <p>【你有几天带薪年假？】①累计工作满1年不满10年的，年休假5天；②已满10年不满20年的，年休假10天；③已满20年的，年休假15天；④法定休假日、休息日不计入年假；⑤因工作需要不能安排休年假的，经职工本人同意后，单位应按日工资收入的300%支付年假工资。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i  class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="fl headpic"><img width="66" src="img/avatar.png"> </div>
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>青青草原</h6>
+                <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+                  不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+                <img  src="img/figurecaptions.png" />
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i  class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="fl headpic"><img width="66" src="img/avatar1.png"> </div>
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>青青草原</h6>
+                <p>生活本来就是鲜花和荆棘并存，用温柔的方式与未知相遇。豆瓣红人海猫小樽2016年重磅新作《你值得世间一切美好》，写给追逐梦想的道路上奋力前行的你。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i  class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="fl headpic"><img width="66" src="img/avatar2.png"> </div>
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>青青草原</h6>
+                <p>【你有几天带薪年假？】①累计工作满1年不满10年的，年休假5天；②已满10年不满20年的，年休假10天；③已满20年的，年休假15天；④法定休假日、休息日不计入年假；⑤因工作需要不能安排休年假的，经职工本人同意后，单位应按日工资收入的300%支付年假工资。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i  class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="dynamic-content">
+            <li class="clearfix"> <img class="fl headpic" src="img/headportrait-big.png"/>
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+                  不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+                <img src="img/figurecaptions.png">
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img class="fl headpic" src="img/headportrait-big.png" />
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>生活本来就是鲜花和荆棘并存，用温柔的方式与未知相遇。豆瓣红人海猫小樽2016年重磅新作《你值得世间一切美好》，写给追逐梦想的道路上奋力前行的你。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img class="fl headpic" src="img/headportrait-big.png" />
+              <div class="comments fl">
+                <h6><span class="fr">今天12:00</span>王思科</h6>
+                <p>【你有几天带薪年假？】①累计工作满1年不满10年的，年休假5天；②已满10年不满20年的，年休假10天；③已满20年的，年休假15天；④法定休假日、休息日不计入年假；⑤因工作需要不能安排休年假的，经职工本人同意后，单位应按日工资收入的300%支付年假工资。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img class="fl headpic" src="img/headportrait-big.png" />
+              <div class="comments fl">
+                <h6><span class="fr">前天10:00</span>王思科</h6>
+                <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+                  不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+                <img src="img/figurecaptions.png">
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img class="fl headpic" src="img/headportrait-big.png" />
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>生活本来就是鲜花和荆棘并存，用温柔的方式与未知相遇。豆瓣红人海猫小樽2016年重磅新作《你值得世间一切美好》，写给追逐梦想的道路上奋力前行的你。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img class="fl headpic" src="img/headportrait-big.png" />
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>【你有几天带薪年假？】①累计工作满1年不满10年的，年休假5天；②已满10年不满20年的，年休假10天；③已满20年的，年休假15天；④法定休假日、休息日不计入年假；⑤因工作需要不能安排休年假的，经职工本人同意后，单位应按日工资收入的300%支付年假工资。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="tab-sub mtb-10-10 TAB">
+            <li class="active"><a href="javascript:void(0)">收到的评论</a></li>
+            <li ><a href="javascript:void(0)">发出的评论</a></li>
+          </ul>
+          <div class="TAB-content row-5-25">
+            <ul class="dynamic-content">
+              <li class="clearfix">
+                <div class="fl headpic"><img width="66"  src="img/headportrait-big.png"/> <span>王思科</span> </div>
+                <div class="comments fl w680"> <img width="36" class="fl mr10" src="img/headportrait-36-36.png">
+                  <div class="fl w590">
+                    <h6>2016-03-03   12:45:26</h6>
+                    <p><a href="javascript:void(0)" class="color-orange">严华娟:</a>在哪里改密码？ </p>
+                    <p class="wb-incomment-blog">王思科的微博:<a href="javascript:void(0)" class="color-green" >"27日晚沙龙在大为科技公司举行，地址是：东亭路与太湖大道交叉口。"</a></p>
+                    <input type="button" value="回复" class="btn btn-reply ">
+                    <div class="reply-wrap">
+                      <textarea></textarea>
+                      <input type="button" value="回复" class="btn btn-send ">
+                    </div>
+                  </div>
+                </div>
+                <div class="fr pr">
+                  <div class="Refuse-message" style="display: none;"><a href="javascript:void(0)">拒收</a><a href="javascript:void(0)">删除信息</a></div>
+                  <i class="fa fa-chevron-down"></i></div>
+              </li>
+            </ul>
+            <ul class="dynamic-content">
+              <li class="clearfix">
+                <div class="fl headpic"><img width="66"  src="img/headportrait-big.png"/> <span>王思科</span> </div>
+                <div class="comments fl w680"> <img width="36" class="fl mr10" src="img/headportrait-36-36.png">
+                  <div class="fl w590">
+                    <h6>2016-03-03   12:45:26</h6>
+                    <p><a href="javascript:void(0)" class="color-orange">张敏洁</a>:回复<a href="javascript:void(0)" class="color-orange">@王思科</a>:郑秘书长那的？ </p>
+                    <p class="wb-incomment-blog">王思科的微博:<a href="javascript:void(0)" class="color-green">"27日晚沙龙在大为科技公司举行，地址是：东亭路与太湖大道交叉口。"</a></p>
+                  </div>
+                </div>
+                <div class="fr pr">
+                  <div class="Refuse-message" style="display: none;"><a href="javascript:void(0)">拒收</a><a href="javascript:void(0)">删除信息</a></div>
+                  <i class="fa fa-chevron-down"></i></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <ul class="dynamic-content">
+            <li class="clearfix">
+              <div class="fl headpic"><img width="66"  src="img/headportrait-big.png"/><span>王思科</span> </div>
+              <div class="comments fl w680"> <img width="36" class="fl mr10" src="img/headportrait-36-36.png">
+                <div class="fl w590">
+                  <h6>2016-03-03   12:45:26</h6>
+                  <p>你试试通过协会官微里的活动报名入口报名 </p>
+                  <p class="wb-incomment-blog">陆林的微博:<a  href="javascript:void(0)" class="color-green">"24号沙龙怎么报名"</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="fl headpic"><img width="66"  src="img/headportrait-big.png"/> <span>王思科</span> </div>
+              <div class="comments fl w680"> <img width="36" class="fl mr10" src="img/headportrait-36-36.png">
+                <div class="fl w590">
+                  <h6>2016-03-03   12:45:26</h6>
+                  <p>右上角"客户端下载"旁边的"..."里进去，有"个人设置"，再点进去，有"修改密码" </p>
+                  <p class="wb-incomment-blog">陆林的微博:<a  href="javascript:void(0)" class="color-green">"27日晚沙龙在大为科技公司举行，地址是：东亭路与太湖大道交叉口。"</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="dynamic-content">
+            <li class="clearfix"> <img  src="img/headportrait-big.png" class="fl headpic"/>
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+                  不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+                <img src="img/figurecaptions.png">
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img src="img/headportrait-big.png" class="fl headpic">
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>生活本来就是鲜花和荆棘并存，用温柔的方式与未知相遇。豆瓣红人海猫小樽2016年重磅新作《你值得世间一切美好》，写给追逐梦想的道路上奋力前行的你。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img src="img/headportrait-big.png" class="fl headpic">
+              <div class="comments fl">
+                <h6><span class="fr">今天12:00</span>王思科</h6>
+                <p>【你有几天带薪年假？】①累计工作满1年不满10年的，年休假5天；②已满10年不满20年的，年休假10天；③已满20年的，年休假15天；④法定休假日、休息日不计入年假；⑤因工作需要不能安排休年假的，经职工本人同意后，单位应按日工资收入的300%支付年假工资。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img src="img/headportrait-big.png" class="fl headpic">
+              <div class="comments fl">
+                <h6><span class="fr">前天10:00</span>王思科</h6>
+                <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+                  不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+                <img src="img/figurecaptions.png">
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img src="img/headportrait-big.png" class="fl headpic">
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>生活本来就是鲜花和荆棘并存，用温柔的方式与未知相遇。豆瓣红人海猫小樽2016年重磅新作《你值得世间一切美好》，写给追逐梦想的道路上奋力前行的你。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+            <li class="clearfix"> <img src="img/headportrait-big.png" class="fl headpic">
+              <div class="comments fl">
+                <h6><span class="fr">今天10:00</span>王思科</h6>
+                <p>【你有几天带薪年假？】①累计工作满1年不满10年的，年休假5天；②已满10年不满20年的，年休假10天；③已满20年的，年休假15天；④法定休假日、休息日不计入年假；⑤因工作需要不能安排休年假的，经职工本人同意后，单位应按日工资收入的300%支付年假工资。 </p>
+                <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="tab-sub mtb-10-10 TAB ">
+            <li class="active"><a href="javascript:void(0)">提到我的</a></li>
+            <li><a href="javascript:void(0)">私信</a></li>
+          </ul>
+          <div class="TAB-content">
+            <ul class="dynamic-content row-5-25">
+              <li class="clearfix"> <img class="fl headpic" src="img/avatar.png">
+                <div class="comments fl">
+                  <h6><span class="fr">今天10:00</span>@王思科</h6>
+                  <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+                    不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+                  <img src="img/figurecaptions.png">
+                  <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="dynamic-content row-5-25">
+              <li class="clearfix"> <img class="fl headpic" src="img/avatar.png">
+                <div class="comments fl">
+                  <h6><span class="fr"> 私信</span>今天10:00<br />
+                    @王思科</h6>
+                  <p>第一个青春是上帝给的，第二个的青春是靠自己努力的。
+                    不要总是在自怨自哀中度过，要握紧双手告诉自己，我还有努力的空间。 </p>
+                  <img src="img/figurecaptions.png">
+                  <div class="dynamic-operation clearfix"><span><i class="icon icon-comment"></i>评论(3)</span><span><i class="icon icon-forwarding"></i>转发(2)</span> <span><i class="icon icon-praise"></i>赞(5)</span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<div >
+      <div class="bg-white"><h6 class="notice-title">公告<span>(共收到50条)</span></h6>
+<ul class="dynamic-content notice-content">
+          <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛。 </p>         
+            
+            </div>
+          </li>
+          <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛。 </p>         
+            
+            </div>
+          </li>
+          <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛 </p>         
+            
+            </div>
+          </li>
+          <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛。 </p>         
+            
+            </div>
+          </li>
+               <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛。 </p>         
+            
+            </div>
+          </li>
+               <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛。 </p>         
+            
+            </div>
+          </li>
+               <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛。 </p>         
+            
+            </div>
+          </li>
+               <li class="clearfix"> <img class="fl headpic"  src="img/notice-avatar.png">
+            <div class="comments fl">
+            <h4>举办晋江市非公企业职工"风采之星"歌手大赛</h4>
+         <h5><span>信息化协会</span><span>2016-03-20   15:30</span></h5>
+              <p>为庆祝五一国际劳动节，丰富晋江市非公企业职工的业余生活，同时给员工展示自我的舞台，经研究，晋江市总工会决定联合晋江市文化体育新闻出版局.晋江市广播电视事业局共同举办全市非公企业职工"风采之星"歌手大赛。 </p>         
+            
+            </div>
+          </li>
+          </ul>
+    </div>
+  </div>
+   <div >
+      <div class="publish">
+        <textarea></textarea>
+        <div class="operation clearfix">
+          <div class="operation-left"><a href="javascript:void(0)"><i class="icon icon-smile"></i>表情</a><a href="javascript:void(0)"><i class="icon icon-choosepeople"></i>选择人员</a></div>
+          <input class="btn-f btn-orange " type="button" value="发送"/>
+        </div>
+      </div>
+      <div class="bg-white">
+        <ul class="dynamic-title clearfix">
+          <li class="fr"><i class="icon icon-dun"></i>拒收设置</li>
+          <li class="active">24小时</li>
+          <li>昨天</li>
+          <li>更早</li>
+        </ul>
+        <ul class="dynamic-content">
+          <li class="clearfix">
+            <div class="fl headpic"><img  src="img/avatar.png"  width="60" /> <span>张海峰</span> </div>
+            <div class="comments fl w680">
+             <img src="img/headportrait-36-36.png"  class="fl mr10" width="36"/>
+              <div class="fl">
+                <h6>10:00</h6>
+                <p>老王，你们部门的办公器材统计完了没，快点提交，就差你们部门的了。 </p>
+                <input type="button" class="btn btn-reply " value="回复"  />
+                 <div class="reply-wrap"><textarea></textarea>
+                <input type="button" class="btn btn-send " value="发送"  />
+                </div>
+              </div>
+            </div>
+                  <div class="fr pr">
+                <div class="Refuse-message"><a href="javascript:void(0)">拒收</a><a href="javascript:void(0)">删除信息</a></div>
+                <i class="fa fa-chevron-down"></i></div>
+          </li>
+          <li class="clearfix">
+            <div class="fl headpic"><img  src="img/avatar.png"  width="60" /> <span>张海峰</span> </div>
+            <div class="comments fl w680">
+             
+               <img src="img/headportrait-36-36.png"  class="fl mr10" width="36"/>
+              <div class="fl w590">  <h6>10:00</h6>
+                <p>老王，你们部门的办公器材统计完了没，快点提交，就差你们部门的了。 </p>
+                                <input type="button" class="btn btn-reply " value="回复"  />
+                  <div class="reply-wrap"><textarea></textarea>
+                <input type="button" class="btn btn-send " value="回复"  />
+       </div>
+              </div>
+              </div>
+              <div class="fr pr">
+                <div class="Refuse-message"><a href="javascript:void(0)">拒收</a><a href="javascript:void(0)">删除信息</a></div>
+                <i class="fa fa-chevron-down"></i></div>
+         
+          </li>
+          <li class="clearfix">
+            <div class="fl headpic"><img  src="img/avatar.png"  width="60" /> <span>张海峰</span> </div>
+            <div class="comments fl">
+            <div class="fl w680">
+               <div> <img src="img/headportrait-36-36.png"  class="fr mr10" width="36"/>
+              <h6 class="text-right">10:00</h6>
+              <p class="text-right">新近职工宣讲会 </p>
+            </div>
+              <div> <img src="img/headportrait-36-36.png"  class="fl mr10" width="36"/>
+              <h6>10:00</h6>
+              <p>要安排哪个讲师？ </p>
+            </div>
+              <div> <img src="img/headportrait-36-36.png"  class="fr mr10" width="36"/>
+              <h6 class="text-right">10:00</h6>
+              <p class="text-right">让朱工去吧。 </p>
+            </div>
+            <div> <img src="img/headportrait-36-36.png"  class="fl mr10" width="36"/>
+              <h6>10:00</h6>
+              <p>好的已经安排 </p>
+            </div>
+         
+         </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div> 
+    <div>
+      <div class="bg-white"><h6 class="notice-title"><span class="fr"><i class="fa fa-trash"> </i>删除</span>所有邮件</h6>
+<table class="tb tr-height-50 table-hover">
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div>
+                </th>
+                <th width="160" class="tl">发件人</th>
+                <th width="470" class="tl">主题</th>
+                <th width="160" class="tl">时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+                      <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+                      <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+                      <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+                      <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+                      <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+                      <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+                      <tr>
+                <td><div class="simulate-cbox-wrap icon">
+                    <input type="checkbox">
+                  </div></td>
+                <td>王新民</td>
+                <td>信息部公告</td>
+                <td>2016-03-03  </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div></div>
+  </div>
+</div>
+</div>
+</div>
+
+<a href="javascript:void(0)" class="gotoback"><i class="icon icon-back"></i></a>
+</div>
+<!--<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/puclic.js"></script>-->
+<script src="js/data.min.js"></script>
+</body>
+</html>

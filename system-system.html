@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/font-awesome.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>系统设置-系统管理</title>
+</head>
+<body>
+<div class="organizational-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-lightgray">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">系统管理</div>
+    <div class="fr">
+      <div class="headportrait pr fl"> <img src="img/adminheadportrait.png"  width="37" height="38"/> <i class="icon">3</i></div>
+      <div class="fl personname pr">管理员<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/adminheadportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>管理员</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+        <li><a  href="system-basic-data.html"><i class="icon icon-jcsj"></i><span>基础数据</span></a></li>
+        <li ><a   href="system-organization.html"><i class="icon icon-zzgl"></i><span>组织管理</span></a>
+          <ul class="item-channels" >
+            <li><a  href="system-user.html"><i class="icon icon-jsgl "></i>角色管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-yhgl"></i>用户管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-gbgl"></i>干部管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rzgl1"></i>日志管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rysj"></i>人员数据</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="javascript:void(0)"><i class="icon icon-xtsz"></i><span>系统设置</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+      <h2 class="system-title">系统设置</h2>
+      <ul class="tab-sub  mb10 ml10 TAB">
+        <li class="active"><a href="javascript:void(0)">个人信息</a></li>
+        <li><a href="javascript:void(0)">系统设置</a></li>
+        <li><a href="javascript:void(0)">应用管理</a></li>
+        <li><a href="javascript:void(0)">模板管理</a></li>
+      </ul>
+      <div class="TAB-content">
+        
+        <div class="mrf10" >
+          <div class="modal-body">
+            <ul class="clearfix">
+              <li><span>用户名</span>
+                <div>
+                  <input type="text">
+                </div>
+              </li>
+              <li><span>密码</span>
+                <div>
+                  <input type="text" class="mb10">
+                  <br />
+                  <input type="button" class="btn-f  btn-default-f " value="修改密码">
+                </div>
+              </li>
+              <li><span>头像</span>
+                <div class="valign-bottom"> <img src="img/tp-cover.png"> <a class="color-orange" href="javascript:void(0)">上传</a> </div>
+              </li>
+              <li> <span>真实姓名</span>
+                <div>
+                  <textarea></textarea>
+                </div>
+              </li>
+              <li> <span>邮箱</span>
+                <div>
+                  <input type="text">
+                </div>
+              </li>
+              <li> <span>工作电话</span>
+                <div>
+                  <input type="text">
+                </div>
+              </li>
+              <li> <span>手机</span>
+                <div>
+                  <input type="text" >
+                </div>
+              </li>
+              <li> <span>每页文件数</span>
+                <div>
+                  <select class="selectpicker" data-width="190px">
+                    <option>10</option>
+                    <option>20</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix  ml230">
+              <button class="btn-f btn-red-lager fl btn-large mr10" type="button">保存</button>
+              <button class="btn-f btn-default-f-large btn-large fl  " type="button">取消</button>
+            </div>
+          </div>
+          <div> </div>
+        </div>
+    
+    <div class="xtsz mrf10">
+          <p class="tips"><i class="fa fa-remove fr"></i>小提示：当您选择关闭一下应用后，该应用将不会再显示到您的首页中。您也可以选择再次开启。</p>
+          <dl>
+            <dt class="mt80">职工服务平台</dt>
+            <dd>
+              <ul class="col-xs-6">
+                <li class="color-gray"><span  class="fr"> 是否启用</span>应用列表</li>
+                <li ><span  class="fr color-green"> 关闭</span>医疗互助</li>
+                <li ><span  class="fr color-green"> 关闭</span>困难帮扶</li>
+                <li ><span  class="fr color-green"> 关闭</span>金秋助学</li>
+                <li ><span  class="fr color-green"> 关闭</span>女工关爱</li>
+                <li ><span  class="fr color-red"> 开启</span>心理咨询</li>
+                <li ><span  class="fr color-red"> 开启</span>求职招聘</li>
+                <li ><span  class="fr color-red"> 开启</span>电子图书</li>
+              </ul>
+              <ul class="col-xs-6">
+                <li class="color-gray"><span  class="fr"> 是否启用</span>应用列表</li>
+                <li ><span  class="fr color-green"> 关闭</span>医疗互助</li>
+                <li ><span  class="fr color-green"> 关闭</span>困难帮扶</li>
+                <li ><span  class="fr color-green"> 关闭</span>金秋助学</li>
+                <li ><span  class="fr color-green"> 关闭</span>女工关爱</li>
+                <li ><span  class="fr color-red"> 开启</span>心理咨询</li>
+                <li ><span  class="fr color-red"> 开启</span>求职招聘</li>
+                <li ><span  class="fr color-red"> 开启</span>电子图书</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="mt40">工会管理平台</dt>
+            <dd >
+              <ul class="col-xs-6">
+                <li class="color-gray"><span  class="fr"> 是否启用</span>应用列表</li>
+                <li ><span  class="fr color-green"> 关闭</span>投票</li>
+                <li ><span  class="fr color-green"> 关闭</span>问卷调查</li>
+              </ul>
+              <ul class="col-xs-6">
+                <li class="color-gray"><span  class="fr"> 是否启用</span>应用列表</li>
+                <li ><span  class="fr color-green"> 关闭</span>在线募捐</li>
+                <li ></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="mt50">云办公平台</dt>
+            <dd>
+              <ul class="col-xs-6">
+                <li class="color-gray"><span  class="fr"> 是否启用</span>应用列表</li>
+                <li ><span  class="fr color-green"> 关闭</span>我的云盘</li>
+                <li ><span  class="fr color-green"> 关闭</span>在线请批假</li>
+                <li ><span  class="fr color-green"> 关闭</span>事务处理</li>
+              </ul>
+              <ul class="col-xs-6">
+                <li class="color-gray"><span  class="fr"> 是否启用</span>应用列表</li>
+                <li ><span  class="fr color-green"> 关闭</span>公文收发</li>
+                <li ><span  class="fr color-green"> 关闭</span>量化考核</li>
+                <li ></li>
+              </ul>
+            </dd>
+          </dl>
+        </div> 
+        <div class="xtsz mrf10">
+          <dl>
+            <dt class="mt80">智能预警及提醒设置</dt>
+            <dd>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                系统通知</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                会员数据变更</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                集体合同或协议到期</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                职工医疗互助到期</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                职工舆情智能提醒</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                会议提醒</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                组织活动提醒</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                请批假提醒</div>
+              <div class="col-xs-4">
+                <input  type="checkbox"/>
+                会员生日</div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="mt80">其他设置</dt>
+            <dd >
+              <div class="col-xs-5">
+                <input  type="checkbox"/>
+                移动端接受通知提醒</div>
+              <div class="col-xs-7">
+                <input  type="checkbox"/>
+                开启"是否发送短信"选项</div>
+              <div class="col-xs-5">
+                <input  type="checkbox"/>
+                举报投诉内容公开显示（所有人可见）</div>
+              <div class="col-xs-7">
+                <input  type="checkbox"/>
+                允许上级对下级人员信息的查看（身份证号、家庭住址、手机号）</div>
+              <div class="col-xs-12"> 提醒声音
+                <select class="selectpicker" data-width="190px">
+                  <option>提醒声音选项1</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+        </div> </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+<script  src="js/vender/bootstrap-select.min.js"></script> 
+<script src="js/puclic.js"></script>
+</body>
+</html>

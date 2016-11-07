@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/font-awesome.min.css" />
+<link charset="utf-8" rel="stylesheet"   href="zTree/zTreeStyle/zTreeStyle.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>用户管理-系统管理</title>
+</head>
+<body>
+<div class="organizational-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-lightgray">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">系统管理</div>
+    <div class="fr">
+      <div class="headportrait pr fl"> <img src="img/adminheadportrait.png"  width="37" height="38"/> <i class="icon">3</i></div>
+      <div class="fl personname pr">管理员<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/adminheadportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>管理员</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+    <li><a  href="system-basic-data.html"><i class="icon icon-jcsj"></i><span>基础数据</span></a></li>
+        <li class="active"><a  href="system-organization.html"><i class="icon icon-zzgl"></i><span>组织管理</span></a>
+          <ul class="item-channels" >
+            <li><a href="javascript:void(0)"><i class="icon icon-jsgl "></i>角色管理</a></li>
+            <li class="active"><a href="javascript:void(0)"><i class="icon icon-yhgl"></i>用户管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-gbgl"></i>干部管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rzgl1"></i>日志管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rysj"></i>人员数据</a></li>
+          </ul>
+        </li>
+        <li ><a  href="system-system.html"><i class="icon icon-xtsz"></i><span>系统设置</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+ <h2 class="conmmon-title">用户管理</h2>
+
+      <div class="TAB-content">
+        
+        <div class=" row-fang" style="display: block;">
+        		<ul id="treeDemo" class="ztree ztree-wrap"></ul>
+          <!--<ul class="guild-selected">
+            <li class="active">
+              <h4><i class="fa fa-caret-down"></i><span>晋江工会</span></h4>
+              <ul>
+                <li>会长单位</li>
+                <li>常务副会长</li>
+                <li>监事会</li>
+                  <li>副事会</li>
+                <li>理事单位</li>
+                <li>会员</li>
+              </ul>
+              
+            </li><li>
+              <h4><i class="fa fa-caret-down"></i><span>新区工会</span></h4>
+              <ul>
+         <li>会长单位</li>
+                <li>常务副会长</li>
+                <li>监事会</li>
+              </ul>
+            </li>
+          </ul>-->
+          <div class="guild-right">
+            <div class="btn-operation-wrap clearfix ">
+              <form class="form-inline clearfix">
+                <div class="form-group fl">
+                 <input type="button" value="新建用户" class="btn-f  btn-default-f  mr10" data-toggle="modal" data-target=".Modal-new-user">
+                    <input type="button" value="编辑用户" class="btn-f  btn-default-f mr10">
+                            <input type="button" value="删除用户" class="btn-f  btn-default-f mr10">
+                            <input type="button" value="冻结/解冻" class="btn-f  btn-default-f ">
+                </div>
+                <div class="form-group fr "><div class=" query icon">
+              <input value="查询">
+              <i class="icon icon-search icon-search-red"></i></div></div>
+              </form>
+            </div>
+            <hr  class="mb10 mtf8"/>
+            <table class="tb">
+              <thead>
+                <tr>
+                  <th width="34"> <div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></th>
+                  <th width="100">姓名</th>
+                  <th width="110">账户名</th>
+                  <th width="160">邮箱</th>
+                  <th width="100">职务</th>
+                  <th width="100">是否禁止</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    
+     
+         </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="Modal-new-user modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">新建用户</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>姓名</span>
+            <div>
+              <input  type="text"  />
+            </div>
+          </li>
+          <li><span>用户名</span>
+               <div > 
+   <input  type="text"   />
+            </div>
+            
+          </li>
+               <li><span>邮箱</span>
+               <div > 
+   <input  type="text"   />
+            </div>
+            
+          </li>
+              <li><span>用户类型</span>
+                <div class="mlf10"> 
+<select class="selectpicker" data-width="170px"> <option>系统用户</option></select>
+            </div>
+          </li>
+                <li><span>是否禁用</span>
+            <div class="dy-checkbox"> 
+<div><input  type="radio"/>是</div>
+<div><input  type="radio"/>否</div>
+
+    </div>
+          </li>
+    <li><span>说明</span>
+            <div> 
+<textarea></textarea>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f   btn-red  fl mr10" >确定</button>
+          <button type="button" class="btn-f  btn-default-f-large fl   mod-close" data-dismiss="modal" >取消</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+<script  src="js/vender/bootstrap-select.min.js"></script> 
+<script src="zTree/jquery.ztree.core-3.5.min.js"></script> 
+<script src="zTree/jquery.ztree.excheck-3.5.min.js"></script> 
+<script src="zTree/jquery.ztree.exedit-3.5.min.js"></script> 
+<script src="js/puclic.js"></script>
+
+
+<SCRIPT type="text/javascript">
+	
+		var setting = {
+			view: {
+				addHoverDom: addHoverDom,
+				removeHoverDom: removeHoverDom,
+				selectedMulti: false
+			},
+			edit: {
+				enable: true,
+				editNameSelectAll: true,
+			},
+			data: {
+				simpleData: {
+					enable: true
+				}
+			},
+			callback: {
+				beforeDrag: beforeDrag,
+				beforeEditName: beforeEditName,
+				beforeRemove: beforeRemove,
+				beforeRename: beforeRename,
+				onRemove: onRemove,
+				onRename: onRename
+			}
+		};
+
+		var zNodes =[
+			{ id:1, pId:0, name:"晋江工会", open:true},
+			{ id:11, pId:1, name:"会长单位"},
+			{ id:12, pId:1, name:"常务副会长"},
+			{ id:13, pId:1, name:"监事会"},
+			{ id:2, pId:0, name:"新区工会", open:true},
+			{ id:21, pId:2, name:"会长单位"},
+			{ id:22, pId:2, name:"常务副会长"}
+			
+		];
+		var log, className = "dark";
+		function beforeDrag(treeId, treeNodes) {
+			return false;
+		}
+		function beforeEditName(treeId, treeNode) {
+			className = (className === "dark" ? "":"dark");
+			showLog("[ "+getTime()+" beforeEditName ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+			zTree.selectNode(treeNode);
+			return confirm("进入节点 -- " + treeNode.name + " 的编辑状态吗？");
+		}
+		function beforeRemove(treeId, treeNode) {
+			className = (className === "dark" ? "":"dark");
+			showLog("[ "+getTime()+" beforeRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+			zTree.selectNode(treeNode);
+			return confirm("确认删除 节点 -- " + treeNode.name + " 吗？");
+		}
+		function onRemove(e, treeId, treeNode) {
+			showLog("[ "+getTime()+" onRemove ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name);
+		}
+		function beforeRename(treeId, treeNode, newName, isCancel) {
+			className = (className === "dark" ? "":"dark");
+			showLog((isCancel ? "<span style='color:red'>":"") + "[ "+getTime()+" beforeRename ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name + (isCancel ? "</span>":""));
+			if (newName.length == 0) {
+				alert("节点名称不能为空.");
+				var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+				setTimeout(function(){zTree.editName(treeNode)}, 10);
+				return false;
+			}
+			return true;
+		}
+		function onRename(e, treeId, treeNode, isCancel) {
+			showLog((isCancel ? "<span style='color:red'>":"") + "[ "+getTime()+" onRename ]&nbsp;&nbsp;&nbsp;&nbsp; " + treeNode.name + (isCancel ? "</span>":""));
+		}
+	
+		function showLog(str) {
+			if (!log) log = $("#log");
+			log.append("<li class='"+className+"'>"+str+"</li>");
+			if(log.children("li").length > 8) {
+				log.get(0).removeChild(log.children("li")[0]);
+			}
+		}
+		function getTime() {
+			var now= new Date(),
+			h=now.getHours(),
+			m=now.getMinutes(),
+			s=now.getSeconds(),
+			ms=now.getMilliseconds();
+			return (h+":"+m+":"+s+ " " +ms);
+		}
+
+		var newCount = 1;
+		function addHoverDom(treeId, treeNode) {
+			var sObj = $("#" + treeNode.tId + "_span");
+			if (treeNode.editNameFlag || $("#addBtn_"+treeNode.tId).length>0) return;
+			var addStr = "<span class='button add' id='addBtn_" + treeNode.tId
+				+ "' title='add node' onfocus='this.blur();'></span>";
+			sObj.after(addStr);
+			var btn = $("#addBtn_"+treeNode.tId);
+			if (btn) btn.bind("click", function(){
+				var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+				zTree.addNodes(treeNode, {id:(100 + newCount), pId:treeNode.id, name:"new node" + (newCount++)});
+				return false;
+			});
+		};
+		function removeHoverDom(treeId, treeNode) {
+			$("#addBtn_"+treeNode.tId).unbind().remove();
+		};
+		function selectAll() {
+			var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+			zTree.setting.edit.editNameSelectAll =  $("#selectAll").attr("checked");
+		}
+		
+		$(document).ready(function(){
+			$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+			$("#selectAll").bind("click", selectAll);
+		});
+		//-->
+	</SCRIPT>
+</body>
+</html>

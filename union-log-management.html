@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>日志管理-工会管理平台</title>
+</head>
+<body>
+<div class="cloud-office-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-green">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">工会管理平台</div>
+    <div class="fr">
+      <div class="headportrait pr fl">
+        <div class="png-headportrait"> </div>
+        <i class="icon">3</i></div>
+      <div class="fl personname pr">王思科<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/headportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>王思科</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+        <li ><a   href="union-vote.html"><i class="icon icon-tp"></i><span>投票</span></a></li>
+            <li><a  href="union-qus-survey.html"><i class="icon icon-wqtc"></i><span>问卷调查</span></a></li>
+<li class="active"><a href="javascript:void(0)"><i class="icon icon-rzgl"></i><span>日志管理</span></a></li>
+        <li><a  href="union-qua-reg.html"><i class="icon icon-sjfx"></i><span>资格登记</span></a></li> 
+             <li><a   href="union-pay.html"><i class="icon icon-zxzf"></i><span>在线支付</span></a></li>
+<li><a href="union-self-bulid.html"><i class="icon icon-zcjz"></i><span>自助建站</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+      <ul class="nav TAB">
+        <li class="active"><a href="javascript:void(0)" role="tab" data-toggle="tab">日志查询</a></li>
+        <li><a href="javascript:void(0)" role="tab" data-toggle="tab">日志分类</a></li>
+      </ul>
+      <div class="TAB-content">
+     
+        <div>
+          <div class="btn-operation-wrap clearfix">
+            <form class="form-inline">
+              <div class="form-group">
+                <label>工会名称</label>
+                <input type="text" class="form-control w200">
+              </div>
+              <div class="form-group">
+                <label>时间</label>
+                <input type="text" class="form-control w200">
+                ~
+                <input type="text" class="form-control w200">
+              </div>
+              <div class="form-group">
+                <label>操作用户</label>
+                <input type="text" class="form-control w200">
+              </div>
+                  <div class="form-group">
+                <label>IP</label>
+                <input type="text" class="form-control w200">
+              </div>
+                 <div class="form-group"><input type="button"  class="btn-f btn-green fl" value="查询"  /></div>
+            </form>
+          
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="80" class=" pl20">工会名称 </th>
+                <th width="70"  >操作者</th>
+                <th width="90">操作类型</th>
+                <th width="60" >结果</th>
+                <th width="160" >操作时间</th>
+                <th width="90" >IP</th>
+                <th width="230" >详细</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pl20">梅岭工会 </td>
+                <td>管理员1</td>
+                <td>登录</td>
+                <td>成功</td>
+                <td>2016-03-03 12:45:26</td>
+                <td>192.168.1.1</td>
+                <td>d登录系统</td>
+              </tr>
+              <tr>
+                <td class="pl20">梅岭工会 </td>
+                <td>管理员1</td>
+                <td>登录</td>
+                <td>成功</td>
+                <td>2016-03-03 12:45:26</td>
+                <td>192.168.1.1</td>
+                <td>d登录系统</td>
+              </tr>
+              <tr>
+                <td class="pl20">梅岭工会 </td>
+                <td>管理员1</td>
+                <td>登录</td>
+                <td>成功</td>
+                <td>2016-03-03 12:45:26</td>
+                <td>192.168.1.1</td>
+                <td>d登录系统</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+     <div>   <div class="chart-wrap mt15">
+          <div class="fl">
+            <h6>系统比例</h6>
+            <div id="main" style="width: 274px;height:290px;"></div>
+          </div>
+          <div class="fr">
+            <h6>日志数量</h6>
+            <div id="township" style="width: 540px;height:290px;"> </div>
+          </div>
+        </div>
+        <table class="tb mt15">
+            <thead>
+              <tr>
+           
+         <th colspan="7" class="pl20">最近访问日志</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pl20">梅岭工会</td>
+                <td>管理员1</td>
+                <td>登录</td>
+                <td>成功 </td>
+                <td>2016-03-03 12:45:26 </td>
+                 <td>192.168.1.1 </td>
+                  <td>登录系统 </td>
+              </tr> 
+                  <tr>
+                <td class="pl20">梅岭工会</td>
+                <td>管理员1</td>
+                <td>登录</td>
+                <td>成功 </td>
+                <td>2016-03-03 12:45:26 </td>
+                 <td>192.168.1.1 </td>
+                  <td>登录系统 </td>
+              </tr>
+                  <tr>
+                <td class="pl20">梅岭工会</td>
+                <td>管理员1</td>
+                <td>登录</td>
+                <td>成功 </td>
+                <td>2016-03-03 12:45:26 </td>
+                 <td>192.168.1.1 </td>
+                  <td>登录系统 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+<script src="js/vender/echarts.min.js"></script> 
+<script src="js/puclic.js"></script> 
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+		
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+option = {
+	color:['#EF4129','#535AA8', '#249831', '#009FF0', '#FFB33A'],
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+		itemGap:20,
+		itemWidth:10,
+		itemHeight:10,
+        left:15,
+        right:15,
+        ssalign:'left',
+		padding:[0,30,0,30],
+		bottom :0,
+        data:['用户','消息服务','其他','工会','职工服务']
+    },
+    series: [
+        {
+            name:'用户比例',
+            type:'pie',
+            radius: ['50%', '65%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:335, name:'用户'},
+                {value:310, name:'消息服务'},
+                {value:234, name:'其他'},
+                {value:135, name:'工会'},
+                {value:1548, name:'职工服务'}
+            ]
+        }
+    ]
+};
+
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+		var myChart1=echarts.init(document.getElementById('township'));
+		option1 = {
+			color:['#A4D3F5'],
+ 
+    tooltip : {
+        trigger: 'axis'
+    },
+   
+  
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'日志数量',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[120, 132, 101, 134, 90, 230, 210, 90, 230, 210]
+        }
+    ]
+	};
+ myChart1.setOption(option1);
+    </script>
+</body>
+</html>

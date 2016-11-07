@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/vender/font-awesome.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>组织管理-系统管理</title>
+</head>
+<body>
+<div class="organizational-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-lightgray">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">系统管理</div>
+    <div class="fr">
+      <div class="headportrait pr fl"> <img src="img/adminheadportrait.png"  width="37" height="38"/> <i class="icon">3</i></div>
+      <div class="fl personname pr">管理员<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/adminheadportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>管理员</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+        <li><a  href="system-basic-data.html"><i class="icon icon-jcsj"></i><span>基础数据</span></a></li>
+        <li class="active"><a  href="javascript:void(0)"><i class="icon icon-zzgl"></i><span>组织管理</span></a>
+          <ul class="item-channels" >
+            <li  class="active"><a href="javascript:void(0)"><i class="icon icon-jsgl "></i>角色管理</a></li>
+            <li><a  href="system-user.html"><i class="icon icon-yhgl"></i>用户管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-gbgl"></i>干部管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rzgl1"></i>日志管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rysj"></i>人员数据</a></li>
+          </ul>
+        </li>
+        <li ><a  href="system-system.html"><i class="icon icon-xtsz"></i><span>系统设置</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+      <h2 class="conmmon-title">角色管理</h2>
+      <div class="pr">
+        <div class="treatment-operation ">
+          <input type="button" value="添加角色" class="btn-f  btn-default-f fl" data-toggle="modal" data-target=".Modal-new-role">
+          <input type="button" value="删除角色" class="btn-f  btn-default-f fl">
+          <input type="button" value="编辑" class="btn-f  btn-red fl" data-target=".Modal-edit-userrole" data-toggle="modal">
+          <input type="button" value="权限" class="btn-f  btn-default-f fl" data-target=".Modal-edit-limits" data-toggle="modal">
+        </div>
+        <div class="TAB-content">
+          <div class="mycloud">
+            <div class="btn-operation-wrap clearfix"> </div>
+            <table class="tb">
+              <thead>
+                <tr>
+                  <th width="34"> <div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div>
+                  </th>
+                  <th width="280">角色</th>
+                  <th width="290">角色描述</th>
+                  <th width="180">角色类型</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>会长</td>
+                  <td>会长</td>
+                  <td>系统角色</td>
+                </tr>
+                <tr>
+                  <td ><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>会长</td>
+                  <td>会长</td>
+                  <td>系统角色</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Modal-edit-userrole modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content new-layer-commonsense-wrap">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">权限设置</h4>
+      </div>
+      <div class="modal-body xtqx">
+        <p>系统权限</p>
+        <table class="table-bordered table">
+          <tr>
+            <td><input type="checkbox" />
+              公告发布</td>
+            <td><input type="checkbox" />
+              公告审核</td>
+            <td><input type="checkbox" />
+              微信群发</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" />
+              发起活动</td>
+            <td><input type="checkbox" />
+              短信群发</td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer  text-center">
+        <button type="button" class="btn-f btn-red  mr10" >保存</button>
+        <button type="button" class="btn-f btn-default-f   mod-close" data-dismiss="modal" >取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Modal-edit-limits modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+<div role="document" class="modal-dialog ">
+  <div class="modal-content ">
+    <div class="modal-header">
+      <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+      <h4 id="myModalLabel" class="modal-title">权限管理</h4>
+    </div>
+    <div class="modal-body">
+      <div class="page-edit-limits">
+        <div class="clearfix">
+          <div class="col-xs-12">页面</div>
+        </div>
+        <dl>
+          <dt class="col-xs-12" > <span><i class="fa fa-chevron-down"></i>云办公平台</span></dt>
+          <dd>
+            <div class="col-xs-3">我的云盘</div>
+            <div class="col-xs-9">
+            <div class="col-xs-3">
+              <input type="checkbox" />添加
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />删除
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />修改
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />查看
+            </div>
+                <div class="col-xs-3">
+              <input type="checkbox" />批量导入
+            </div>
+            </div>
+          </dd>
+          <dd>
+            <div class="col-xs-3">事务处理</div>
+           <div class="col-xs-9">
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            </div>
+          </dd>
+          <dd>
+            <div class="col-xs-3">量化考核</div>
+         <div class="col-xs-9">
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            </div>
+          </dd>
+        </dl>
+        <dt class="col-xs-12" > <span><i class="fa fa-chevron-down"></i>公会管理平台</span></dt>
+        <dd>
+          <div class="col-xs-3">投票</div>
+         <div class="col-xs-9">
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            </div>
+        </dd>
+        <dd>
+          <div class="col-xs-3">问卷调查</div>
+           <div class="col-xs-9">
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            </div>
+        </dd>
+        <dd>
+          <div class="col-xs-3">日志管理</div>
+           <div class="col-xs-9">
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            <div class="col-xs-3">
+              <input type="checkbox" />
+            </div>
+            </div>
+        </dd>
+        </dl>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn-f   btn-red   mr10" >确定</button>
+        <button type="button" class="btn-f  btn-default-f-large    mod-close" data-dismiss="modal" >取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="Modal-new-role modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">新建角色</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>角色名称</span>
+            <div>
+              <input  type="text"  />
+            </div>
+          </li>
+          <li><span>角色描述</span>
+            <div >
+              <input  type="text"   />
+            </div>
+          </li>
+          <li><span>角色类型</span>
+            <div >
+              <input  type="text"   />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f   btn-red  fl mr10" >确定</button>
+          <button type="button" class="btn-f  btn-default-f-large fl   mod-close" data-dismiss="modal" >取消</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+
+<script src="js/puclic.js"></script>
+</body>
+</html>

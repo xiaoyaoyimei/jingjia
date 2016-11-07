@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/font-awesome.min.css" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-duallistbox.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>用户组管理-系统管理</title>
+</head>
+<body>
+<div class="organizational-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-lightgray">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">系统管理</div>
+    <div class="fr">
+      <div class="headportrait pr fl"> <img src="img/adminheadportrait.png"  width="37" height="38"/> <i class="icon">3</i></div>
+      <div class="fl personname pr">管理员<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/adminheadportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>管理员</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+    <li><a  href="system-basic-data.html"><i class="icon icon-jcsj"></i><span>基础数据</span></a></li>
+        <li class="active"><a  href="system-organization.html"><i class="icon icon-zzgl"></i><span>组织管理</span></a>
+          <ul class="item-channels" >
+            <li><a href="javascript:void(0)"><i class="icon icon-jsgl "></i>角色管理</a></li>
+            <li ><a href="javascript:void(0)"><i class="icon icon-yhgl"></i>用户管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-gbgl"></i>干部管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rzgl1"></i>日志管理</a></li>
+            <li><a href="javascript:void(0)"><i class="icon icon-rysj"></i>人员数据</a></li>
+                   <li class="active"><a href="javascript:void(0)"><i class="fa fa-users "></i>用户组管理</a></li>
+          </ul>
+        </li>
+        <li ><a  href="system-system.html"><i class="icon icon-xtsz"></i><span>系统设置</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+ <h2 class="conmmon-title">用户组管理</h2>
+
+      
+      <ul class="guild-selected"> <li class="active"> dc_wx(9)</li><li>dcwwgdaudgauwg_wx(9)</li><li>dc_wx(9)</li></ul>
+               <div  class="guild-right">
+            <div class="btn-operation-wrap clearfix ">
+              <form class="form-inline clearfix">
+                <div class="form-group fl">
+                 <input type="button" value="新建用户组" class="btn-f  btn-default-f  mr10" data-toggle="modal" data-target=".Modal-new-usergroup">
+                    <input type="button" value="编辑用户组" class="btn-f  btn-default-f mr10">
+                            <input type="button" value="删除组" class="btn-f  btn-default-f mr10">
+                                          </div>
+                <div class="form-group fr "><div class=" query icon">
+              <input value="查询">
+              <i class="icon icon-search icon-search-red"></i></div></div>
+              </form>
+            </div>
+            <hr  class="mb10 mtf8"/>
+            <table class="tb">
+              <thead>
+                <tr>
+                  <th width="34"> <div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></th>
+                  <th width="100">姓名</th>
+                  <th width="110">账户名</th>
+                  <th width="160">邮箱</th>
+                  <th width="100">职务</th>
+                  <th width="100">是否禁止</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+                <tr>
+                  <td><div class="simulate-cbox-wrap icon">
+                      <input type="checkbox">
+                    </div></td>
+                  <td>王子涵</td>
+                   <td>admin</td>
+                  <td>13789675231@163.com</td>
+                  <td>会长</td>
+                  <td>启用</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="Modal-new-usergroup modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content  w900">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">新建用户组</h4>
+      </div>
+      <div class="modal-body">
+      <div class="user-group"> 
+        <div class="user-group-title"><span class="col-xs-2">分组名称</span>
+        <div class="col-xs-10"><input  type="text"/><input  type="checkbox"/>设为星标联系组</div></div>
+        <div  class="user-group-content"><span class="col-xs-2">选择联系人</span>
+        <div  class="col-xs-10">
+         <select multiple="multiple" size="10" name="ug_DualListbox" class="ug_DualListbox">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3" selected="selected">Option 3</option>
+        <option value="option4">Option 4</option>
+        <option value="option5">Option 5</option>
+        <option value="option6" selected="selected">Option 6</option>
+        <option value="option7">Option 7</option>
+        <option value="option8">Option 8</option>
+        <option value="option9">Option 9</option>
+        <option value="option0">Option 10</option>
+        <option value="option0">Option 11</option>
+        <option value="option0">Option 12</option>
+        <option value="option0">Option 13</option>
+        <option value="option0">Option 14</option>
+        <option value="option0">Option 15</option>
+        <option value="option0">Option 16</option>
+        <option value="option0">Option 17</option>
+        <option value="option0">Option 18</option>
+        <option value="option0">Option 19</option>
+        <option value="option0">Option 20</option>
+      </select>
+      </div>
+      </div>
+        </div>
+        </div>
+      <div class="modal-footer  text-center">
+          <button type="button" class="btn-f   btn-red  mr10" >保存</button>
+          <button type="button" class="btn-f  btn-default-f-large    mod-close" data-dismiss="modal" >取消</button>
+      
+    </div>
+</div>
+</div>
+
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+<script  src="js/vender/bootstrap-select.min.js"></script> 
+<script  src="js/vender/jquery.bootstrap-duallistbox.min.js"></script> 
+<script src="js/puclic.js"></script>
+    <script>
+        var ug_DualListbox = $('.ug_DualListbox').bootstrapDualListbox({
+          nonSelectedListLabel: '所有联系人',
+          selectedListLabel: '已添加到该组的联系人',
+		   preserveSelectionOnMove: 'moved',
+		   moveOnSelect: false  
+        });
+      </script>
+</body>
+</html>

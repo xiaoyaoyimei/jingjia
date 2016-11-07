@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>短信-消息服务平台</title>
+</head>
+
+<body>
+<div class="cloud-office-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-purple">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">云办公平台</div>
+    <div class="fr">
+      <div class="headportrait pr fl">
+        <div class="png-headportrait"> </div>
+        <i class="icon">3</i></div>
+      <div class="fl personname pr">王思科<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/headportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>王思科</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+        <li ><a   href="message-notice.html"><i class="icon icon-gong"></i><span>公告</span></a></li>
+        <li><a   href="message-weibo.html"><i class="icon icon-weibo"></i><span>微博</span></a></li>
+        <li class="active" ><a  href="javascript:void(0)"><i class="icon icon-message"></i><span>短信</span></a></li>
+        <li><a   href="message-mail.html"><i class="icon icon-mail"></i><span>邮件</span></a></li>
+        <li><a  href="message-online-news.html"><i class="icon icon-zaixian"></i><span>在线消息</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+      <ul class="nav TAB">
+        <li class="active"><a href="javascript:void(0)">发短信</a></li>
+        <li><a href="javascript:void(0)">已收信息</a></li>
+        <li><a href="javascript:void(0)">已发信息</a></li>
+      </ul>
+      <div class="TAB-content">
+        <div class="mycloud">
+          <div class="modal-body">
+            <ul class="clearfix">
+              <li><span>收信人</span>
+                <div>
+                  <input type="text">
+                  <br>
+                  <a href="javascript:void(0)" class="color-orange">添加人员</a> </div>
+              </li>
+              <li><span>其他号码</span>
+                <div>
+                  <input type="text">
+                  <br>
+                  <a href="javascript:void(0)" class="color-orange">清空</a> </div>
+              </li>
+              <li> <span>返回号码</span>
+                <div>
+                  <input type="text">
+                </div>
+              </li>
+              <li> <span>推送间隔</span>
+                <div>
+                  <input type="text">
+                </div>
+              </li>
+              <li> <span>推送内容</span>
+                <div>
+                  <textarea></textarea>
+                </div>
+              </li>
+              <li> <span>个性签名</span>
+                <div>
+                  <input type="text">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="clearfix  ml230">
+              <button type="button" class="btn-f btn-purple-lager fl btn-large mr10">发送</button>
+              <button type="button" class="btn-f btn-default-f-large btn-large fl  ">取消</button>
+            </div>
+          </div>
+        </div>
+        <div >
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f  btn-purple fl" value="删除"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="导出"/>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="150"  class="tl">发信人</th>
+                <th width="440" class="tl">内容</th>
+                <th width="200" class="tl">发布时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td>李艳</td>
+                <td>测试短信收到勿回</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td>刘白</td>
+                <td>工会技术文档</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mycloud">
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f  btn-purple fl" value="删除"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="导出"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="再次发送"/>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="150"  class="tl">收信人</th>
+                <th width="300" class="tl">内容</th>
+                <th width="200" class="tl">发送时间</th>
+                <th width="140" class="tl">短信详情</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td>李艳</td>
+                <td>测试短信收到勿回</td>
+                <td>2016-03-03   12:45:26 </td>
+                <td><a  class="color-orange">查看回复</a></td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td>刘白</td>
+                <td>工会技术文档</td>
+                <td>2016-03-03   12:45:26 </td>
+                <td><a  class="color-gray">查看回复</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="recycle">
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f btn-blue fl" value="恢复"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="彻底删除"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="清空回收站"/>
+            <div class="fr query icon">
+              <input  value="查询"/>
+              <i class="icon icon-search"></i></div>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="400"  class="tl">文件名</th>
+                <th width="190" class="tl">大小</th>
+                <th width="200" class="tl">修改日期</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><div class="pr folder-wrap"><i class="icon icon-folder"></i><span>测试文件夹</span></div></td>
+                <td>23KB</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><div class="pr folder-wrap"><i class="icon icon-word"></i><span>测试文件夹</span></div></td>
+                <td>23KB</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/puclic.js"></script>
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap.min.css"/>
+<link charset="utf-8" rel="stylesheet"   href="css/vender/bootstrap-select.min.css" />
+<link charset="utf-8" rel="stylesheet"  href="css/style.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="js/vender/html5shiv.min.js"></script>
+        <script src="js/vender/respond.min.js"></script>
+        <![endif]-->
+<title>会议管理</title>
+</head>
+
+<body>
+<div class="cloud-office-bg w"> 
+  <!--头部-->
+  <div class="header clearfix bg-blue">
+    <div class="png-logo fl"> </div>
+    <div class="fl yun-title">云办公平台</div>
+    <div class="fr">
+      <div class="headportrait pr fl">
+        <div class="png-headportrait"> </div>
+        <i class="icon">3</i></div>
+      <div class="fl personname pr">王思科<i class="icon icon-drop-down-white"></i></div>
+      <div class="fl pr pr15"><i class="icon-setup-white icon"></i></div>
+    </div>
+  </div>
+  <!--主体-->
+  <div class="content clearfix"> 
+    <!--左侧-->
+    <div class="fl sidebar">
+      <div class="headportrait-bg clearfix"> 
+        <!--    <s></s>--> 
+        <img src="img/headportrait-big.png"  class="fl"  width="62" height="62">
+        <div class="fl mt10">
+          <h6>欢迎登录</h6>
+          <p>王思科</p>
+        </div>
+      </div>
+      <ul class="yun-menu MENU">
+        <li><a href="cloud-office.html"><i class="icon icon-yun"></i><span>我的云盘</span></a></li>
+        <li><a  href="cloud-affairs-treatment.html"><i class="icon icon-dealthing"></i><span>事务处理</span></a></li>
+        <li><a  href="cloud-check.html"><i class="icon icon-examine"></i><span>量化考核</span></a></li>
+        <li><a href="cloud-add-leave.html"><i class="icon icon-counterfeit"></i><span>在线请批假</span></a></li>
+        <li><a  href="cloud-analyze.html"><i class="icon icon-analyze"></i><span>舆情分析</span></a></li>
+        <li  class="active"><a href="javascript:void(0)"><i class="icon icon-meeting"></i><span>会议管理</span></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <div class="fr tb-yun-wrap ">
+      <ul class="nav TAB">
+        <li class="active"><a href="javascript:void(0)">我发起的</a></li>
+        <li><a href="javascript:void(0)">我参与的</a></li>
+        <li><a href="javascript:void(0)">我审批</a></li>
+      </ul>
+      <div class="TAB-content">
+        <div class="mycloud">
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f btn-blue fl " value="新建会议"  data-toggle="modal" data-target=".Modal-new-started-meeting"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="删除会议"/>
+            <div class="fr query icon">
+              <input  value="查询"/>
+              <i class="icon icon-search"></i></div>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="280"  class="tl">会议主题</th>
+                <th width="140" class="tl">状态</th>
+                <th width="140" class="tl">发起者</th>
+                <th width="200" class="tl">会议时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td> 
+                <td><a data-target=".Modal-new-my-view-meeting" data-toggle="modal" href="javascript:void(0)">讨论新项目开发方案</a></td>
+                <td>正常</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a data-target=".Modal-new-my-view-meeting" data-toggle="modal" href="javascript:void(0)">新员工培训</a></td>
+                <td class="color-orange">待审批</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a data-target=".Modal-new-my-view-meeting" data-toggle="modal" href="javascript:void(0)">设计方案讨论会</a></td>
+                <td class="color-red">未通过</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div >
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f btn-blue fl" value="新建会议" />
+            <input type="button"  class="btn-f btn-default-f fl"  value="删除会议"/>
+            <div class="fr query icon">
+              <input  value="查询"/>
+              <i class="icon icon-search"></i></div>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="280"  class="tl">会议主题</th>
+                <th width="140" class="tl">状态</th>
+                <th width="140" class="tl">发起者</th>
+                <th width="200" class="tl">会议时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a href="javascript:void(0)" data-toggle="modal" data-target=".Modal-new-join-view-meeting">讨论新项目开发方案</a></td>
+                <td>已接受</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a href="javascript:void(0)" data-toggle="modal" data-target=".Modal-new-join-view-meeting">新员工培训</a></td>
+                <td >已接受</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a href="javascript:void(0)" data-toggle="modal" data-target=".Modal-new-join-view-meeting">设计方案讨论会</a></td>
+                <td class="color-red">已拒绝</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <div class="btn-operation-wrap clearfix">
+            <input type="button"  class="btn-f btn-blue fl" value="新建会议" data-toggle="modal" data-target=".Modal-new-view-meeting"/>
+            <input type="button"  class="btn-f btn-default-f fl"  value="删除会议"/>
+            <div class="fr query icon">
+              <input  value="查询"/>
+              <i class="icon icon-search"></i></div>
+          </div>
+          <table class="tb" >
+            <thead>
+              <tr>
+                <th width="34" class="tl"> <div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div>
+                </th>
+                <th width="280"  class="tl">会议主题</th>
+                <th width="140" class="tl">状态</th>
+                <th width="140" class="tl">发起者</th>
+                <th width="200" class="tl">会议时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a href="javascript:void(0)"  data-toggle="modal" data-target=".Modal-new-view-meeting">讨论新项目开发方案</a></td>
+                <td>已审批</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a href="javascript:void(0)"  data-toggle="modal" data-target=".Modal-wait-view-meeting" >新员工培训</a></td>
+                <td  class="color-orange">待审批</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+              <tr>
+                <td><div class="simulate-cbox-wrap icon" >
+                    <input type="checkbox"/>
+                  </div></td>
+                <td><a href="javascript:void(0)"  data-toggle="modal" data-target=".Modal-new-view-meeting">设计方案讨论会</a></td>
+                <td >已审批</td>
+                <td>刘宇凡</td>
+                <td>2016-03-03   12:45:26 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--我发起的-->
+<div class="Modal-new-started-meeting  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">新建会议</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>会议主题</span>
+            <div>
+              <input  type="text" />
+            </div>
+          </li>
+          <li><span>会议地点</span>
+            <div>
+              <input  type="text" />
+            </div>
+          </li>
+          <li><span>会议时间</span>
+            <div>
+              <input  type="text" class="w158"/>
+              <label>~</label>
+              <input  type="text" class="w158"/>
+            </div>
+          </li>
+          <li> <span>会议内容</span>
+            <div >
+              <textarea></textarea>
+            </div>
+          </li>
+          <li> <span>审批者</span>
+            <div >
+              <input  type="text"/>
+              <br />
+              <a href="javascript:void(0)" class="color-orange">添加人员</a> </div>
+          </li>
+          <li> <span>参与人</span>
+            <div >
+              <input  type="text"/>
+              <br />
+              <a href="javascript:void(0)" class="color-orange">添加人员</a> </div>
+          </li>
+        </ul>
+        <div class="ml230 notice">
+          <div class="simulate-cbox-wrap icon fl">
+            <input type="checkbox">
+          </div>
+          <span class="fl">短信通知</span>
+          <div class="simulate-cbox-wrap icon fl">
+            <input type="checkbox">
+          </div>
+          <span class="fl">邮件通知</span></div>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f btn-blue fl mr10" >提交</button>
+          <button type="button" class="btn-f btn-default-f fl  mod-close" data-dismiss="modal" >取消</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<!--审批查看-->
+<div class="Modal-new-view-meeting  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">查看会议</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>会议主题</span>
+            <div>
+              <input  type="text" value="讨论新项目开发方案" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议地点</span>
+            <div>
+              <input  type="text"  value="一号会议室" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议时间</span>
+            <div>
+              <input  type="text" class="w158" value="2016-03-25    10:00 " readonly="readonly"/>
+              <label>~</label>
+              <input  type="text" class="w158" value="2016-03-25    11:00" readonly="readonly"/>
+            </div>
+          </li>
+          <li> <span>会议内容</span>
+            <div >
+              <textarea  >开发需求探讨、制定开发方案、估算时间及人员需求</textarea>
+            </div>
+          </li>
+          <li> <span>发起者</span>
+            <div >
+              <input  type="text" value="张信哲" readonly="readonly"/>
+            </div>
+          </li>
+          <li> <span>审批意见</span>
+            <div >
+              <input  type="text" value="同意" class="color-green" readonly="readonly"/>
+            </div>
+          </li>
+          <hr  class="divider-meeting-statistical"/>
+          <li> <span>会议参与统计</span>
+            <div class="JProgressBar-wrap"> <s class="JProgressBar JProgressBar-green" style="width:35%"></s><s class="JProgressBar JProgressBar-blue" style="width:45%"></s><s class="JProgressBar JProgressBar-orange" style="width:20%"></s></div>
+          </li>
+          <li> <span><s class="square square-green"></s>已接受</span>
+            <div  class="pr"> <i class="icon icon-drop-down-arrow"></i>
+              <textarea   readonly="readonly">8人     刘羽凡、王思维、张一男、艾佳佳、董菲菲、李凯</textarea>
+            </div>
+          </li>
+          <li> <span><s class="square square-blue"></s>未响应</span>
+            <div  class="pr"> <i class="icon icon-drop-down-arrow"></i>
+              <textarea  type="text" readonly="readonly" >4人   李冰、张璇、关鹏、康非、郭靖、张信哲、刘鹏飞</textarea>
+            </div>
+          </li>
+        </ul>
+        <li> <span><s class="square square-orange"></s>已拒绝</span>
+          <div  class="pr"> <i class="icon icon-drop-down-arrow"></i>
+            <textarea  type="text"  readonly="readonly">张飞：由于请假，所以不能参加</textarea>
+          </div>
+        </li>
+        <li> <span>会议签到</span> </li>
+        <li> <span>已签到</span>
+          <div > <p class="ti10">5人</p> </div>
+        </li>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f btn-blue fl mr10" >提交</button>
+          <button type="button" class="btn-f btn-default-f fl  mod-close" data-dismiss="modal" >取消</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<!--我发起的查看-->
+<div class="Modal-new-my-view-meeting  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">查看会议</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>会议主题</span>
+            <div>
+              <input  type="text" value="讨论新项目开发方案" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议地点</span>
+            <div>
+              <input  type="text"  value="一号会议室" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议时间</span>
+            <div>
+              <input  type="text" class="w158" value="2016-03-25    10:00 " readonly="readonly"/>
+              <label>~</label>
+              <input  type="text" class="w158" value="2016-03-25    11:00" readonly="readonly"/>
+            </div>
+          </li>
+          <li> <span>会议内容</span>
+            <div >
+              <textarea  >开发需求探讨、制定开发方案、估算时间及人员需求</textarea>
+            </div>
+          </li>
+          <li> <span>发起者</span>
+            <div >
+              <input  type="text" value="张信哲" readonly="readonly"/>
+            </div>
+          </li>
+             <li> <span>审批者
+             </span>
+            <div >
+              <input  type="text" value="刘宇凡" readonly="readonly"/>
+            </div>
+          </li>
+                   
+           <li> <span>参与者
+             </span>
+            <div >
+                <textarea  readonly="readonly"/>刘羽凡、王思维、张一男、艾佳佳、董菲菲、李凯、马军、李冰、张璇、关鹏、康非、郭靖</textarea>
+            </div>
+          </li>
+          <li> <span>审批意见</span>
+
+        
+         <div> <p class="approval-opinion"><strong class="color-red"> 拒绝！</strong><br />时间和会议室都有冲突，请改期</p>
+     
+            </div>
+          </li>
+    
+        </ul>
+       </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f btn-blue btn-apply-again fl mr10" >重新发起申请</button>
+          <button type="button" class="btn-f btn-default-f fl  mod-close" data-dismiss="modal" >取消</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<!--我参与的查看-->
+<div class="Modal-wait-view-meeting  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">会议审批</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>会议主题</span>
+            <div>
+              <input  type="text" value="讨论新项目开发方案" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议地点</span>
+            <div>
+              <input  type="text"  value="一号会议室" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议时间</span>
+            <div>
+              <input  type="text" class="w158" value="2016-03-25    10:00 " readonly="readonly"/>
+              <label>~</label>
+              <input  type="text" class="w158" value="2016-03-25    11:00" readonly="readonly"/>
+            </div>
+          </li>
+          <li> <span>会议内容</span>
+            <div >
+              <textarea  >开发需求探讨、制定开发方案、估算时间及人员需求</textarea>
+            </div>
+          </li>
+          <li> <span>发起者</span>
+            <div >
+              <input  type="text" value="张信哲" readonly="readonly"/>
+            </div>
+          </li>
+             <li> <span>审批者
+             </span>
+            <div >
+              <input  type="text" value="刘宇凡" readonly="readonly"/>
+            </div>
+          </li>
+                   
+           <li> <span>参与者
+             </span>
+            <div >
+                <textarea  readonly="readonly"/>刘羽凡、王思维、张一男、艾佳佳、董菲菲、李凯、马军、李冰、张璇、关鹏、康非、郭靖</textarea>
+            </div>
+          </li>
+          <li> <span>是否参加</span>
+<div>                <textarea  /></textarea></div>
+     
+          </li>
+    
+        </ul>
+       </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f btn-blue  fl mr10" >同意</button>
+          <button type="button" class="btn-f btn-default-f fl  mod-close" data-dismiss="modal" >拒绝</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<!--待审批-->
+<div class="Modal-new-join-view-meeting  modal fade"   role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
+  <div role="document" class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input type="button" class="icon icon-close mod-close"  aria-label="Close" data-dismiss="modal" />
+        <h4 id="myModalLabel" class="modal-title">参与会议</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="clearfix">
+          <li><span>会议主题</span>
+            <div>
+              <input  type="text" value="讨论新项目开发方案" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议地点</span>
+            <div>
+              <input  type="text"  value="一号会议室" readonly="readonly"/>
+            </div>
+          </li>
+          <li><span>会议时间</span>
+            <div>
+              <input  type="text" class="w158" value="2016-03-25    10:00 " readonly="readonly"/>
+              <label>~</label>
+              <input  type="text" class="w158" value="2016-03-25    11:00" readonly="readonly"/>
+            </div>
+          </li>
+          <li> <span>会议内容</span>
+            <div >
+              <textarea  >开发需求探讨、制定开发方案、估算时间及人员需求</textarea>
+            </div>
+          </li>
+          <li> <span>发起者</span>
+            <div >
+              <input  type="text" value="张信哲" readonly="readonly"/>
+            </div>
+          </li>
+             <li> <span>审批者
+             </span>
+            <div >
+              <input  type="text" value="刘宇凡" readonly="readonly"/>
+            </div>
+          </li>
+                   
+           <li> <span>参与者
+             </span>
+            <div >
+                <textarea  readonly="readonly"/>刘羽凡、王思维、张一男、艾佳佳、董菲菲、李凯、马军、李冰、张璇、关鹏、康非、郭靖</textarea>
+            </div>
+          </li>
+          <li> <span>是否参加</span>
+<div>                <textarea   class="color-gray"/>如果拒绝，请写明原因</textarea></div>
+     
+          </li>
+    
+        </ul>
+       </div>
+      <div class="modal-footer">
+        <div class="clearfix  ml230">
+          <button type="button" class="btn-f btn-blue  fl mr10" >参加</button>
+          <button type="button" class="btn-f btn-default-f fl  mod-close" data-dismiss="modal" >拒绝</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+</div>
+<script src="js/vender/jquery-1.12.2.min.js"></script> 
+<script src="js/vender/bootstrap.min.js"></script> 
+<script src="js/puclic.js"></script>
+</body>
+</html>
